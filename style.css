@@ -210,3 +210,89 @@
         grid-template-columns: 1fr;
     }
 } */
+
+
+/* ======brain section====== */
+.second-brain{
+    padding: 90px 0;
+    background-color: #ffffff;
+}
+
+.brain-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+/* left image */
+.brain-image img{
+    width: 100px;
+    max-width: 480px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* right content */
+.brain-content{
+    max-width: 520px;
+}
+
+/* small label */
+.brain-label{
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #2e7d32;
+    margin-bottom: 14px;
+}
+/* title */
+.brain-content h2{
+    font-size: 2.2rem;
+    line-height: 1.3;
+    margin-bottom:20px;
+}
+/* description */
+.brain-desc{
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+/* cheklist */
+.brain-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.brain-list li{
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 14px;
+    font-size: 0.95rem;
+    color: #333;
+}
+.brain-list li::before{
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #2e7d32;
+    font-weight: bold;
+}
+/* responsive */
+/* @media (max-width: 992px){
+    .brain-wrapper{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .brain-content{
+        margin: 0 auto;
+    }
+
+    .brain-list li{
+        text-align: left;
+    }
+} */
