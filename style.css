@@ -114,7 +114,7 @@
     color: #333;
 }
 /* responsive banner : jatae shob type screen e fit hoy */
-@media (max-width: 768px){
+/* @media (max-width: 768px){
     .banner h1{
         font-size: 2rem;
     }
@@ -124,6 +124,89 @@
     .banner-buttons{
         flex-direction: column;
     }
-}
+} */
 
 /* ========Notes Section========== */
+.notes{
+    padding:  80px 0;
+    background-color: #f9fafb;
+}
+/* section heading */
+.section-header{
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+.section-header h2{
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+.section-header p{
+    color: #555;
+    font-size: 1rem;
+}
+/* card wrapper */
+.notes-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+}
+
+/* single card */
+.note-card{
+    background-color: #ffffff;
+    padding: 32px 24px;
+    border-radius: 14px;
+    text-align: center;
+}
+/* hover effect */
+.note-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* icon wrapper */
+.note-card .icon{
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.note-card .icon img{
+    width: 24px;
+    height: 24px;
+}
+/* icon color */
+.icon.red{
+    background-color: #c82b1a;
+}
+.icon.blue{
+    background-color: #1c62be;
+}
+.icon.green{
+    background-color: #1dbd67;
+}
+.icon.orange{
+    background-color: #c77f28;
+}
+/* card title */
+.note-card p{
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+/* responsive */
+/* @media (max-width: 992px){
+    .notes-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px){
+    .notes-cards{
+        grid-template-columns: 1fr;
+    }
+} */
