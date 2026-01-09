@@ -226,7 +226,7 @@
 }
 /* left image */
 .brain-image img{
-    width: 100px;
+    width: 100%;
     max-width: 480px;
     display: block;
     margin: 0 auto;
