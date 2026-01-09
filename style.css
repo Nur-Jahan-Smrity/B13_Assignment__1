@@ -45,7 +45,7 @@
 .nav-action{
     margin-left: auto;
 }
-.btn-primary{
+.btn-primary, .btn-secondary{
     text-decoration: none;
     background-color: #2e7d32;
     color: white;
@@ -56,4 +56,65 @@
 /* hover effect on header button */
 .btn-primary:hover{
     background-color: #1b5e20;
+}
+/* Banner */
+.banner{
+    width: 100%;
+    min-height: 80vh;
+    background: url('assets/hero-bg.png') no-repeat center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.banner-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.banner-content{
+    position: relative;
+}
+.banner h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #f0f0f0;
+}
+.banner-buttons{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* secondary buttons unique features */
+.btn-secondary{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.btn-secondary:hover{
+    background-color: #fff;
+    color: #333;
+}
+/* responsive banner : jatae shob type screen e fit hoy */
+@media (max-width: 768px){
+    .banner h1{
+        font-size: 2rem;
+    }
+    .banner p{
+        font-size: 1 rem;
+    }
+    .banner-buttons{
+        flex-direction: column;
+    }
 }
